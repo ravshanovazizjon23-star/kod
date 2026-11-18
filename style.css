@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f6ff;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #cbdcf5;
+}
+
+h2 {
+    color: #1765c1;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    border: 1px solid #b8d3f5;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1675e8;
+}
+
+button {
+    background: #1675e8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0755b5;
+}
+
+.jadval {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.jadval th {
+    background: #1675e8;
+    color: white;
+}
+
+.jadval th,
+.jadval td {
+    padding: 13px;
+    border: 1px solid #d5e4f7;
+}
+
+.jadval tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+.delete {
+    background: #e53935;
+    padding: 7px 12px;
+}
+
+@media(max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    .jadval {
+        min-width: 600px;
+    }
+}

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma'lumotlar jadvali</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Ma'lumot qo‘shish</h2>
+
+    <form id="myForm">
+        <input type="text" id="ism" placeholder="Ism" required>
+        <input type="text" id="familiya" placeholder="Familiya" required>
+        <input type="number" id="yosh" placeholder="Yosh" min="1" required>
+        <input type="text" id="shahar" placeholder="Shahar" required>
+
+        <button type="submit">SEND</button>
+    </form>
+
+    <h2>Ro‘yxat</h2>
+
+    <table class="jadval">
+        <thead>
+            <tr>
+                <th>Nomer</th>
+                <th>Ism</th>
+                <th>Familiya</th>
+                <th>Yosh</th>
+                <th>Shahar</th>
+                <th>Amal</th>
+            </tr>
+        </thead>
+
+        <tbody id="royhat"></tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
